@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> 🌟 Stay up to date at [opendrivelab.com](https://opendrivelab.com/#news)!
+
 # PersFormer: a New Baseline for 3D Laneline Detection
 ![pipeline](imgs/pipeline.svg)  
 
