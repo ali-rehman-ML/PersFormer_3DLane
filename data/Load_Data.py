@@ -1200,6 +1200,10 @@ class LaneDataset(Dataset):
         """
 
         label_list = glob.glob(json_file_path + '**/*.json', recursive=True)
+        valid_segments = os.listdir(os.path.join(dataset_base_dir,'validation'))
+        valid_label_list = [lb for lb in label_list if lb.split('/')[7] in valid_segments]
+        label_list = valid_label_list
+
 
         # save label list and this determine the idx order
         self._label_list = label_list
